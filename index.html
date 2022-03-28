@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidelogo">
+        <div class="sidebar">
+            <img src="odin-lined.png">
+            <p class="norse">Odin</p>
+        </div>
+    </div>
+    <div class="rightside">
+        <div class="toptext">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="whitebox">
+            <p id="whitebox-p">Let's do this!</p>
+            <form>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-element">
+                        <label>Last Name</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        required>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="form-element">
+                        <label>Password</label>
+                        <input type="password" id="password" required>
+                        <p id="validation-error"></p>
+                    </div>
+                    <div class="form-element">
+                        <label>Confirm Password</label>
+                        <input type="password" id="confirm_password" required>
+                    </div>
+                </div>
+            </div>
+                <button type="submit" class="create-account">Create Account</button>        
+            </form>
+        <p id="account">Already have an account? <a href="#" class="login">Log in</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
